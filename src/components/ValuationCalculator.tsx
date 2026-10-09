@@ -216,10 +216,6 @@ export default function ValuationCalculator() {
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200 space-y-2 mb-6 shadow-2xs">
                   <div className="flex items-center space-x-2 text-xs text-slate-700">
                     <CheckCircle className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                    <span>Direct refinery PGM assay pricing</span>
-                  </div>
-                  <div className="flex items-center space-x-2 text-xs text-slate-700">
-                    <CheckCircle className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
                     <span>Same-day payment via RTGS/IMPS</span>
                   </div>
                   <div className="flex items-center space-x-2 text-xs text-slate-700">
