@@ -57,7 +57,7 @@ export default function WhyChooseUs() {
             Why Choose Ideal Import Exports
           </h2>
           <p className="text-base sm:text-lg text-slate-300 font-normal">
-            Eliminating traditional scrap opacity with scientific assaying, direct refinery liquidity, and guaranteed rapid settlement across India.
+            Eliminating traditional scrap opacity with scientific assaying, transparent market liquidity, and guaranteed rapid settlement across India.
           </p>
         </div>
 

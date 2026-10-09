@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | Ideal Import Exports",
   },
   description:
-    "India's leading catalytic converter scrap buyer and authorized exporter. We purchase ceramic and metal honeycomb catalysts, DPF/SCR filters, and PGM components at direct refinery rates. Instant XRF assay valuation, same-day payment, and pan-India pickup. Call +91 91645 31341.",
+    "India's leading catalytic converter scrap buyer and authorized exporter. We purchase ceramic and metal honeycomb catalysts, DPF/SCR filters, and PGM components at top market rates. Instant XRF assay valuation, same-day payment, and pan-India pickup. Call +91 91645 31341.",
   keywords: [
     "catalytic converter scrap buyer India",
     "catalyst scrap exporter India",
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ideal Import Exports | Catalytic Converter Scrap Buyer & Exporter",
     description:
-      "India's trusted catalytic converter scrap buyer. Direct refinery rates, certified XRF testing, instant payouts, and pan-India logistics. Call +91 91645 31341.",
+      "India's trusted catalytic converter scrap buyer. Top market rates, certified XRF testing, instant payouts, and pan-India logistics. Call +91 91645 31341.",
     images: ["/images/hero_warehouse.jpg"],
   },
   robots: {

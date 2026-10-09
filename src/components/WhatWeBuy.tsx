@@ -51,7 +51,7 @@ export default function WhatWeBuy() {
             What We Buy Across India
           </h2>
           <p className="text-base sm:text-lg text-slate-600 font-normal">
-            We purchase complete assemblies, loose monoliths, and industrial batches with transparent refinery payouts guaranteed.
+            We purchase complete assemblies, loose monoliths, and industrial batches with transparent scrap payouts guaranteed.
           </p>
         </div>
 

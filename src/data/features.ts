@@ -11,7 +11,7 @@ export const FEATURES_DATA: FeatureItem[] = [
   {
     id: "best-rates",
     title: "Best Market Rates",
-    tagline: "Direct International Refinery Peg",
+    tagline: "Live International Market Peg",
     description: "Our purchase prices are benchmarked live to London Platinum and Palladium Market (LPPM) daily fixes, ensuring you get maximum scrap yield without middleman margins.",
     iconName: "TrendingUp",
     highlight: "Live PGM Index",

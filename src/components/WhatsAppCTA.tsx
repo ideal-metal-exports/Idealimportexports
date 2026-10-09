@@ -3,7 +3,6 @@
 import React from "react";
 import { 
   Clock, 
-  CheckCircle2, 
   ArrowRight, 
   PhoneCall, 
   ShieldCheck 
@@ -107,11 +106,6 @@ export default function WhatsAppCTA() {
             <span className="flex items-center gap-1.5">
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
               No obligation free quote
-            </span>
-            <span>•</span>
-            <span className="flex items-center gap-1.5">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-              Direct refinery pricing
             </span>
           </div>
 

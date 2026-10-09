@@ -28,7 +28,7 @@ export const MATERIALS_DATA: MaterialItem[] = [
     pgmElements: ["Pt 1000-2500 ppm", "Pd 800-3000 ppm", "Rh 100-350 ppm"],
     specs: ["400/600 cpsi cell density", "XRF spectrometry testing", "Moisture & ash deduction transparency"],
     popularBrands: ["Corning", "NGK Insulators", "Faurecia", "Tenneco"],
-    badge: "Direct Refinery Pricing",
+    badge: "Top Market Rates",
   },
   {
     id: "metal-catalysts",

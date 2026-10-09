@@ -9,7 +9,7 @@ export const FAQS_DATA: FAQItem[] = [
   {
     id: "faq-1",
     question: "How do you calculate the scrap price of a catalytic converter?",
-    answer: "Every catalytic converter contains varying ratios of Platinum (Pt), Palladium (Pd), and Rhodium (Rh). We price units either by matching the stamped manufacturer OEM code against our international database of over 20,000 verified catalyst assays, or by conducting on-site handheld XRF spectrometry. This price is directly linked to the live London Platinum and Palladium Market (LPPM) spot exchange, ensuring you receive true refinery value.",
+    answer: "Every catalytic converter contains varying ratios of Platinum (Pt), Palladium (Pd), and Rhodium (Rh). We price units either by matching the stamped manufacturer OEM code against our international database of over 20,000 verified catalyst assays, or by conducting on-site handheld XRF spectrometry. This price is directly linked to the live London Platinum and Palladium Market (LPPM) spot exchange, ensuring you receive true market value.",
     category: "pricing",
   },
   {
