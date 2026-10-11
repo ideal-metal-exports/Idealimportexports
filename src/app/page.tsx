@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import HeroOverview from "@/components/HeroOverview";
 import WhatWeBuy from "@/components/WhatWeBuy";
 import ValuationCalculator from "@/components/ValuationCalculator";
 import Process from "@/components/Process";
@@ -14,8 +15,11 @@ export default function Home() {
       {/* 1. Sticky Navigation Bar */}
       <Navbar />
 
-      {/* 2. Hero Section */}
+      {/* 2. Hero Section (Image only) */}
       <Hero />
+
+      {/* 2.5. Overview / Trust & CTA Section */}
+      <HeroOverview />
 
       {/* 3. What We Buy (Services / Materials) */}
       <WhatWeBuy />
