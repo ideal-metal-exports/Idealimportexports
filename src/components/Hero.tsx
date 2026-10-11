@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { 
   Phone, 
@@ -28,13 +29,37 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative bg-white text-slate-900 pt-16 pb-20 sm:pt-24 sm:pb-28 overflow-hidden border-b border-slate-100">
+      {/* Full Background Ambient Backdrop */}
+      <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center opacity-[0.05] select-none overflow-hidden">
+        <Image
+          src="/images/hero_full_bg.png"
+          alt="Ideal Background"
+          fill
+          priority
+          className="object-contain object-center scale-150"
+        />
+      </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
         
-        {/* Blank Space Slot (Reserved for custom content / banner) */}
-        <div className="w-full max-w-xl sm:max-w-2xl lg:max-w-3xl min-h-[40px] sm:min-h-[60px] mb-6 flex items-center justify-center">
-          {/* Add your custom content or banner here */}
-        </div>
+        {/* Big Full Clear Hero Brand Image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95, y: -10 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="mb-10 w-full max-w-xl sm:max-w-2xl lg:max-w-3xl flex justify-center"
+        >
+          <div className="w-full flex items-center justify-center">
+            <Image
+              src="/images/hero_full_bg.png"
+              alt="Ideal Nutrition & Wellness Era"
+              width={1920}
+              height={1080}
+              priority
+              className="w-full h-auto max-h-[260px] sm:max-h-[360px] md:max-h-[440px] object-contain drop-shadow-xs"
+            />
+          </div>
+        </motion.div>
 
         {/* Main Headline */}
         <motion.h1
