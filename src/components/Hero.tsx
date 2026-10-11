@@ -1,13 +1,11 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { 
   Phone, 
   CheckCircle2, 
   ArrowRight, 
-  Clock,
   ShieldCheck,
   Zap,
   TrendingUp
@@ -33,24 +31,10 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
         
-        {/* Official Brand Logo Card */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95, y: -10 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="mb-10 w-full max-w-xl sm:max-w-2xl lg:max-w-3xl flex justify-center"
-        >
-          <div className="w-full bg-white p-5 sm:p-7 md:p-9 rounded-3xl shadow-sm border border-slate-200/90 flex items-center justify-center transition-all duration-300 hover:shadow-md">
-            <Image
-              src="/images/ideal_logo.png"
-              alt="Ideal Catalytic Convertor Exports"
-              width={652}
-              height={386}
-              priority
-              className="w-full h-auto max-h-[260px] sm:max-h-[340px] md:max-h-[400px] object-contain"
-            />
-          </div>
-        </motion.div>
+        {/* Blank Space Slot (Reserved for custom content / banner) */}
+        <div className="w-full max-w-xl sm:max-w-2xl lg:max-w-3xl min-h-[40px] sm:min-h-[60px] mb-6 flex items-center justify-center">
+          {/* Add your custom content or banner here */}
+        </div>
 
         {/* Main Headline */}
         <motion.h1
