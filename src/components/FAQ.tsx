@@ -12,7 +12,7 @@ import { FAQS_DATA } from "@/data/faqs";
 import { COMPANY } from "@/data/company";
 
 export default function FAQ() {
-  const [openId, setOpenId] = useState<string>("faq-1");
+  const [openId, setOpenId] = useState<string>("faq-2");
   const [activeCategory, setActiveCategory] = useState<string>("all");
 
   const categories = [

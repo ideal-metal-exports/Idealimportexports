@@ -24,7 +24,6 @@ export default function Footer() {
     { label: "Home", href: "#home" },
     { label: "What We Buy", href: "#materials" },
     { label: "Valuation Calculator", href: "#calculator" },
-    { label: "5-Step Process", href: "#process" },
     { label: "FAQ", href: "#faq" },
     { label: "Contact Us", href: "#contact" },
   ];

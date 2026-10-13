@@ -7,12 +7,6 @@ export interface FAQItem {
 
 export const FAQS_DATA: FAQItem[] = [
   {
-    id: "faq-1",
-    question: "How do you calculate the scrap price of a catalytic converter?",
-    answer: "Every catalytic converter contains varying ratios of Platinum (Pt), Palladium (Pd), and Rhodium (Rh). We price units either by matching the stamped manufacturer OEM code against our international database of over 20,000 verified catalyst assays, or by conducting on-site handheld XRF spectrometry. This price is directly linked to the live London Platinum and Palladium Market (LPPM) spot exchange, ensuring you receive true market value.",
-    category: "pricing",
-  },
-  {
     id: "faq-2",
     question: "Do you buy loose ceramic dust, damaged honeycomb cores, or only complete catalytic units?",
     answer: "We purchase all conditions! This includes complete uncut assemblies, canned converters with pipes cut flush, hollowed ceramic honeycomb chunks, crushed biscuit, and milled catalyst dust. For loose cores and dust batches, we homogenize the sample and perform a precise XRF or fire assay to determine the exact PGM parts-per-million (PPM).",

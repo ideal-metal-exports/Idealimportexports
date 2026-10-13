@@ -29,7 +29,6 @@ export default function Navbar() {
     { label: "Home", href: "#home" },
     { label: "What We Buy", href: "#materials" },
     { label: "Valuation Tool", href: "#calculator" },
-    { label: "Process", href: "#process" },
     { label: "FAQ", href: "#faq" },
     { label: "Contact", href: "#contact" },
   ];
