@@ -17,7 +17,7 @@ export default function Hero() {
         >
           <Image
             src="/images/hero_full_bg.png"
-            alt="Ideal Nutrition & Wellness Era"
+            alt="Ideal Catalytic Convertor Exports"
             width={1920}
             height={1080}
             priority
