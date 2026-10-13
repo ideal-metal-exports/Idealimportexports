@@ -4,6 +4,22 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+interface BrandItem {
+  name: string;
+  src: string;
+  width: number;
+  height: number;
+  imgClass?: string;
+}
+
+const BRANDS: BrandItem[] = [
+  { name: "Renault", src: "/images/brands/renault.png", width: 165, height: 200, imgClass: "h-9 sm:h-11 md:h-12" },
+  { name: "Maruti Suzuki", src: "/images/brands/maruti_suzuki.png", width: 74, height: 95, imgClass: "h-9 sm:h-11 md:h-12" },
+  { name: "Jeep", src: "/images/brands/jeep.png", width: 200, height: 81, imgClass: "h-6 sm:h-7.5 md:h-8.5" },
+  { name: "Hyundai", src: "/images/brands/hyundai.png", width: 200, height: 125, imgClass: "h-8 sm:h-10 md:h-11" },
+  { name: "Mercedes-Benz", src: "/images/brands/mercedes.png", width: 200, height: 200, imgClass: "h-9 sm:h-11 md:h-12" },
+];
+
 export default function CarBrandsBanner() {
   return (
     <div className="w-full mb-8 sm:mb-12 md:mb-14">
@@ -15,22 +31,30 @@ export default function CarBrandsBanner() {
         <div className="w-12 h-0.5 sm:h-1 bg-emerald-600 mx-auto mt-2 rounded-full" />
       </div>
 
-      {/* Brand Logos Strip */}
+      {/* Brand Logos */}
       <motion.div
         initial={{ opacity: 0, y: -6 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="w-full flex justify-center items-center px-4"
       >
-        <div className="w-full max-w-4xl sm:max-w-5xl flex justify-center items-center overflow-x-auto py-2 scrollbar-none">
-          <Image
-            src="/images/car_brands_strip_trans.png"
-            alt="Car Models and Brands: Toyota, BMW, Volkswagen, Audi, Suzuki, Kia, Renault, Fiat, Alfa Romeo, Ford, Honda"
-            width={1024}
-            height={65}
-            priority
-            className="w-full min-w-[580px] sm:min-w-0 max-w-4xl sm:max-w-5xl h-auto object-contain drop-shadow-2xs"
-          />
+        <div className="flex items-center justify-center flex-wrap gap-6 sm:gap-10 md:gap-14 lg:gap-16 py-2">
+          {BRANDS.map((brand) => (
+            <div
+              key={brand.name}
+              className="flex items-center justify-center p-1 hover:scale-105 transition-transform duration-200 select-none"
+              title={brand.name}
+            >
+              <Image
+                src={brand.src}
+                alt={brand.name}
+                width={brand.width}
+                height={brand.height}
+                priority
+                className={`w-auto object-contain drop-shadow-2xs ${brand.imgClass || "h-9 sm:h-11 md:h-12"}`}
+              />
+            </div>
+          ))}
         </div>
       </motion.div>
     </div>
