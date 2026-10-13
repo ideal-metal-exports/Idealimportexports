@@ -2,10 +2,10 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { 
-  Phone, 
-  CheckCircle2, 
-  ArrowRight 
+import {
+  Phone,
+  CheckCircle2,
+  ArrowRight
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { COMPANY } from "@/data/company";
@@ -20,7 +20,7 @@ export default function HeroOverview() {
   return (
     <section className="relative bg-white text-slate-900 pt-8 pb-20 sm:pt-12 sm:pb-24 border-b border-slate-100">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
-        
+
         {/* Main Headline */}
         <motion.h1
           initial={{ opacity: 0, y: 15 }}
@@ -29,7 +29,7 @@ export default function HeroOverview() {
           transition={{ duration: 0.6 }}
           className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight font-poppins leading-[1.1] mb-6 max-w-4xl text-slate-950"
         >
-          South India’s Trusted <br className="hidden sm:inline" />
+          South India’s Authorised<br className="hidden sm:inline" />
           <span>Catalytic Converter</span>{" "}
           <span className="text-emerald-700">
             Scrap Buyer
@@ -63,7 +63,7 @@ export default function HeroOverview() {
           ))}
         </motion.div>
 
-          {/* Call to Action Buttons */}
+        {/* Call to Action Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
