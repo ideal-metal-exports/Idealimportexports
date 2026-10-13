@@ -55,7 +55,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col min-w-0">
               <span className="font-extrabold text-sm sm:text-base lg:text-lg tracking-wide text-slate-950 font-montserrat uppercase leading-none flex items-center gap-1.5 whitespace-nowrap">
-                IDEAL IMPORT <span className="text-[#e62526] font-black">EXPORTS</span>
+                IDEAL <span className="text-emerald-700 font-extrabold">IMPORT</span> <span className="text-[#e62526] font-black">EXPORTS</span>
               </span>
               <span className="text-[9px] sm:text-[10px] tracking-wider text-slate-500 uppercase font-medium mt-1 truncate">
                 Catalytic Converter Scrap

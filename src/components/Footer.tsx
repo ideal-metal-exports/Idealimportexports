@@ -61,7 +61,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-extrabold text-lg text-slate-950 font-montserrat uppercase leading-none tracking-wide">
-                  IDEAL IMPORT <span className="text-[#e62526] font-black">EXPORTS</span>
+                  IDEAL <span className="text-emerald-700 font-extrabold">IMPORT</span> <span className="text-[#e62526] font-black">EXPORTS</span>
                 </span>
                 <span className="text-[10px] tracking-wider text-slate-500 uppercase font-semibold mt-1">
                   Catalytic Converter Scrap
