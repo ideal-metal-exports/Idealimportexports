@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 interface BrandItem {
   name: string;
@@ -23,9 +22,12 @@ const BRANDS: BrandItem[] = [
   { name: "Kia", src: "/images/brands/kia.png", width: 200, height: 47, imgClass: "h-5 sm:h-6.5 md:h-7.5" },
 ];
 
+// Quadrupled brand items for 100% seamless, uninterrupted infinite loop across any display width
+const LOOPING_BRANDS = [...BRANDS, ...BRANDS, ...BRANDS, ...BRANDS];
+
 export default function CarBrandsBanner() {
   return (
-    <div className="w-full mb-8 sm:mb-12 md:mb-14">
+    <div className="w-full mb-8 sm:mb-12 md:mb-14 overflow-hidden">
       {/* Title & Green Accent Bar */}
       <div className="text-center mb-5 sm:mb-8">
         <h2 className="text-xs sm:text-sm md:text-base font-extrabold uppercase tracking-wider text-slate-800 font-poppins">
@@ -34,18 +36,18 @@ export default function CarBrandsBanner() {
         <div className="w-12 h-0.5 sm:h-1 bg-emerald-600 mx-auto mt-2 rounded-full" />
       </div>
 
-      {/* Brand Logos */}
-      <motion.div
-        initial={{ opacity: 0, y: -6 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="w-full flex justify-center items-center px-4"
-      >
-        <div className="flex items-center justify-center flex-wrap gap-5 sm:gap-8 md:gap-11 lg:gap-13 py-2">
-          {BRANDS.map((brand) => (
+      {/* Seamless Continuous Looping Marquee */}
+      <div className="relative w-full overflow-hidden py-3 select-none group">
+        {/* Left & Right Soft Edge Gradient Masks */}
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-24 md:w-32 bg-gradient-to-r from-white to-transparent z-10" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-24 md:w-32 bg-gradient-to-l from-white to-transparent z-10" />
+
+        {/* Marquee Track */}
+        <div className="animate-marquee flex items-center gap-8 sm:gap-12 md:gap-16">
+          {LOOPING_BRANDS.map((brand, idx) => (
             <div
-              key={brand.name}
-              className="flex items-center justify-center p-1 hover:scale-105 transition-transform duration-200 select-none"
+              key={`${brand.name}-${idx}`}
+              className="flex items-center justify-center p-1.5 shrink-0 hover:scale-110 transition-transform duration-200"
               title={brand.name}
             >
               <Image
@@ -53,13 +55,13 @@ export default function CarBrandsBanner() {
                 alt={brand.name}
                 width={brand.width}
                 height={brand.height}
-                priority
+                priority={idx < 8}
                 className={`w-auto object-contain drop-shadow-2xs ${brand.imgClass || "h-9 sm:h-11 md:h-12"}`}
               />
             </div>
           ))}
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 }
