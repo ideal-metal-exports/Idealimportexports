@@ -5,10 +5,7 @@ import { motion } from "framer-motion";
 import { 
   Phone, 
   CheckCircle2, 
-  ArrowRight, 
-  ShieldCheck, 
-  Zap, 
-  TrendingUp 
+  ArrowRight 
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { COMPANY } from "@/data/company";
@@ -18,12 +15,6 @@ export default function HeroOverview() {
     "NABL Certified Assay",
     "Instant RTGS / IMPS Bank Transfer",
     "Pan-India Pickup (All 28 States)",
-  ];
-
-  const quickStats = [
-    { label: "Quote Speed", value: "15 Mins", sub: "WhatsApp Average", icon: Zap },
-    { label: "Assay Accuracy", value: "99.8%", sub: "Olympus XRF Testing", icon: ShieldCheck },
-    { label: "Bank Settlement", value: "Same-Day", sub: "Immediate RTGS / IMPS", icon: TrendingUp },
   ];
 
   return (
@@ -72,13 +63,13 @@ export default function HeroOverview() {
           ))}
         </motion.div>
 
-        {/* Call to Action Buttons */}
+          {/* Call to Action Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 w-full sm:w-auto mb-12"
+          className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 w-full sm:w-auto"
         >
           {/* WhatsApp Button */}
           <a
@@ -100,37 +91,6 @@ export default function HeroOverview() {
             <Phone className="w-5 h-5 text-emerald-700" />
             <span>Call Now: {COMPANY.phone}</span>
           </a>
-        </motion.div>
-
-        {/* 3 Clean Highlight Cards */}
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.25 }}
-          className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-3xl"
-        >
-          {quickStats.map((item, idx) => {
-            const Icon = item.icon;
-            return (
-              <div 
-                key={idx}
-                className="bg-slate-50/70 border border-slate-200 rounded-2xl p-4 flex items-center space-x-3.5 text-left"
-              >
-                <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center shrink-0 shadow-2xs">
-                  <Icon className="w-5 h-5 text-emerald-600" />
-                </div>
-                <div>
-                  <div className="text-base font-bold text-slate-950 font-poppins leading-none">
-                    {item.value}
-                  </div>
-                  <div className="text-xs text-slate-500 font-medium mt-1">
-                    {item.sub}
-                  </div>
-                </div>
-              </div>
-            );
-          })}
         </motion.div>
 
       </div>

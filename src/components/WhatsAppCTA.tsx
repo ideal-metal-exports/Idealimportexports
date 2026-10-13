@@ -4,7 +4,6 @@ import React from "react";
 import { 
   Clock, 
   ArrowRight, 
-  PhoneCall, 
   ShieldCheck 
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
@@ -84,16 +83,6 @@ export default function WhatsAppCTA() {
               <span>Get Instant Quote on WhatsApp</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
-
-            {/* Direct Call Button */}
-            <a
-              href={`tel:${COMPANY.phoneRaw}`}
-              className="w-full sm:w-auto flex items-center justify-center space-x-2.5 px-6 py-4 rounded-xl bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 font-semibold text-base transition-colors"
-            >
-              <PhoneCall className="w-4 h-4 text-emerald-700" />
-              <span>Call: {COMPANY.phone}</span>
-            </a>
-
           </div>
 
           {/* Bottom Trust Notice */}

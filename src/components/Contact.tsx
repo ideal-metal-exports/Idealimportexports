@@ -81,36 +81,9 @@ export default function Contact() {
         </div>
 
         {/* Contact Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
           
-          {/* Card 1: WhatsApp */}
-          <a
-            href={COMPANY.whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-6 rounded-2xl bg-white border border-slate-200 shadow-2xs hover:border-emerald-500 hover:shadow-xs transition-all duration-200 flex flex-col justify-between group cursor-pointer"
-          >
-            <div>
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center justify-center mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-all">
-                <FaWhatsapp className="w-6 h-6" />
-              </div>
-              <span className="text-xs font-bold text-emerald-700 uppercase tracking-wider block mb-1">
-                Instant Chat (15 Mins)
-              </span>
-              <h3 className="text-lg font-bold text-slate-900 font-poppins mb-1">
-                WhatsApp Desk
-              </h3>
-              <p className="text-xs text-slate-500 leading-relaxed">
-                Send photos of converter codes directly for fast valuation.
-              </p>
-            </div>
-            <div className="mt-4 pt-3 border-t border-slate-100 font-bold text-sm text-emerald-700 flex items-center justify-between">
-              <span>+91 91645 31341</span>
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </div>
-          </a>
-
-          {/* Card 2: Phone */}
+          {/* Card 1: Phone */}
           <a
             href={`tel:${COMPANY.phoneRaw}`}
             className="p-6 rounded-2xl bg-white border border-slate-200 shadow-2xs hover:border-emerald-500 hover:shadow-xs transition-all duration-200 flex flex-col justify-between group"
