@@ -31,7 +31,7 @@ export default function CarBrandsBanner() {
       {/* Title & Green Accent Bar */}
       <div className="text-center mb-5 sm:mb-8">
         <h2 className="text-xs sm:text-sm md:text-base font-extrabold uppercase tracking-wider text-slate-800 font-poppins">
-          PURCHASE PRICES BY CAR MODELS AND BRANDS
+          Our Authorised Clients
         </h2>
         <div className="w-12 h-0.5 sm:h-1 bg-emerald-600 mx-auto mt-2 rounded-full" />
       </div>

@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative bg-white text-slate-900 pt-8 pb-12 sm:pt-12 sm:pb-16 md:pt-14 md:pb-20 overflow-hidden border-b border-slate-100 flex flex-col items-center justify-center">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center w-full">
-        {/* Purchase Prices By Car Models And Brands */}
+        {/* Our Authorised Clients */}
         <CarBrandsBanner />
 
         {/* Full Clear Hero Brand Image */}
