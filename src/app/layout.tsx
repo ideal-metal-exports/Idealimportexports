@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Inter } from "next/font/google";
+import { Poppins, Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import MobileBottomBar from "@/components/MobileBottomBar";
@@ -16,6 +16,13 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+  weight: ["600", "700", "800", "900"],
   display: "swap",
 });
 
@@ -145,7 +152,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${inter.variable} scroll-smooth antialiased`}
+      className={`${poppins.variable} ${inter.variable} ${montserrat.variable} scroll-smooth antialiased`}
     >
       <head>
         <script
