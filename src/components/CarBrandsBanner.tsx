@@ -18,6 +18,9 @@ const BRANDS: BrandItem[] = [
   { name: "Jeep", src: "/images/brands/jeep.png", width: 200, height: 81, imgClass: "h-6 sm:h-7.5 md:h-8.5" },
   { name: "Hyundai", src: "/images/brands/hyundai.png", width: 200, height: 125, imgClass: "h-8 sm:h-10 md:h-11" },
   { name: "Mercedes-Benz", src: "/images/brands/mercedes.png", width: 200, height: 200, imgClass: "h-9 sm:h-11 md:h-12" },
+  { name: "Suzuki", src: "/images/brands/suzuki.png", width: 200, height: 89, imgClass: "h-8 sm:h-10 md:h-11" },
+  { name: "Volkswagen", src: "/images/brands/volkswagen.png", width: 200, height: 200, imgClass: "h-9 sm:h-11 md:h-12" },
+  { name: "Kia", src: "/images/brands/kia.png", width: 200, height: 47, imgClass: "h-5 sm:h-6.5 md:h-7.5" },
 ];
 
 export default function CarBrandsBanner() {
@@ -38,7 +41,7 @@ export default function CarBrandsBanner() {
         transition={{ duration: 0.5 }}
         className="w-full flex justify-center items-center px-4"
       >
-        <div className="flex items-center justify-center flex-wrap gap-6 sm:gap-10 md:gap-14 lg:gap-16 py-2">
+        <div className="flex items-center justify-center flex-wrap gap-5 sm:gap-8 md:gap-11 lg:gap-13 py-2">
           {BRANDS.map((brand) => (
             <div
               key={brand.name}
